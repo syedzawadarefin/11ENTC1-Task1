@@ -1,0 +1,68 @@
+body {
+    background-color: #FFE398;
+}
+
+.logo {
+    width: 100px;
+    float: left;
+}
+
+nav {
+    float: right;
+    font-size: 2em;
+}
+
+.navbar {
+    width: 99%;
+    margin-top: -30px;
+    height: 80px;   
+}
+
+
+
+nav a {
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 24px;
+}
+
+.logodiv {
+    width: 31%;
+    height: 100%;
+    font-size: 25px;
+    font-family: "Poetsen One";
+    /* background-color: black; */
+}
+
+.logodiv p {
+    transform: translate(-2px, 15px);
+    font-size: 1.5em;
+    color: #ed2228;
+}
+
+.logodiv a {
+    text-decoration: none;
+}
+
+/* 
+header {
+    background-color: red;
+}
+ */
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
