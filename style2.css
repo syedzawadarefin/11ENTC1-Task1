@@ -1,9 +1,7 @@
 body {
     background-color: burlywood;
     margin: 0px;
-    /* overflow: hidden; */
 }
-
 
 #menu {
     height: 100vh;
@@ -60,32 +58,23 @@ body {
 }
 
 
-.contentsbg {
-    font-size: 4em;
-    font-family: "Briem Hand";
+.menu-items::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    transition: all ease-in-out 100ms;
+}
 
-    background-color: burlywood;
-    margin-left: clamp(10vw, 10vw, 20vw); 
-    margin-right: 0px;
-    transform: rotateZ(-20deg);
-    width: 932893219312px; 
-    height: 200%;
+/* #homepagecontents {
+    background-color: white;
+    margin-left: clamp(10vw, 10vw, 20vw);
+    margin-right: clamp(10vw, 10vw, 10vw);
+    width: clamp(10%, 80%, 80%);
+    height: 80%;
     text-align: right;
     padding-right: 50px;
     z-index: 2;
-    transition: background-color 100ms ease-in-out, transform 100ms ease-in-out;
-} 
-
-.contentsbg:hover {
-    background-color: rgb(211, 174, 125);
-    transform: translate(-1%) rotate(-20deg);
-}
-
-.contents {
-    background-color: black;
-    height: 400px;
-    width: 400px;
-    z-index: 3;
-    display: absolute;
-}
-
+} */
