@@ -1,15 +1,17 @@
 body {
     background-color: burlywood;
     margin: 0px;
+    overflow: hidden;
 }
 
 #menu {
     height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-#firstbackground {
+#background {
     height: 100%;
     width: 100vw;
     background-image: url(assets/homepagebackground.jpg);
@@ -25,7 +27,7 @@ body {
     transition: background-size 400ms ease-in-out, opacity 400ms ease-in-out;
 }
 
-#menu-items:hover ~ #firstbackground {
+#menu-items:hover ~ #background {
     opacity: 0.3;
 }
 
@@ -68,13 +70,114 @@ body {
     transition: all ease-in-out 100ms;
 }
 
-/* #homepagecontents {
-    background-color: white;
-    margin-left: clamp(10vw, 10vw, 20vw);
-    margin-right: clamp(10vw, 10vw, 10vw);
-    width: clamp(10%, 80%, 80%);
-    height: 80%;
-    text-align: right;
-    padding-right: 50px;
-    z-index: 2;
+#contentsbg {
+    background-color: burlywood;
+    position: absolute;
+    display: block;
+    margin-left: clamp(2rem, 10vw, 7vw);
+    margin-right: 0%;
+    margin-top: -10%;
+    width: 1100px;
+    height: 100000px;
+    left: 45%;
+    z-index: 3;
+    transform: rotateZ(-28deg);
+    transition: background-color 100ms ease-in-out, margin-left 100ms ease-in-out;
+}
+/* 
+#contentsbg:hover {
+    background-color: rgb(216, 176, 125);
+    margin-left: clamp(2rem, 10vw, 6vw);
+    transform: rotateZ(-28deg);
 } */
+
+#contents {
+    /* background-color: white; */
+    display: inline-block;
+    position: absolute;
+    right: -1.5%;
+    top: 0%;
+    height: 100%;
+    width: 70%;
+    z-index: 4;
+    text-align: right;
+    /* padding-right: 2.5%; */
+    
+
+}
+
+#contents:hover + #contents {
+    background-color: rgb(216, 176, 125);
+    margin-left: clamp(2rem, 10vw, 6vw);
+    transform: rotateZ(-28deg);
+}
+
+#contents span {
+    color: #f02131;
+    font-family: "Poetsen One";
+    font-size: clamp(2rem, 4vw, 6rem);
+}
+
+#contents img {
+    height: clamp(10%, 40%, 80%);
+    width: clamp(1rem, 40%, 80%);   
+}
+
+#contents p {
+    font-family: "Montserrat";
+    margin-right: 6%;
+}
+
+#contents h1 {
+    font-family: "Briem Hand";
+    margin-right: 6%
+}
+
+.contentsChild1 {
+    /* background-color: aquamarine; */
+    width: 75%;
+    float: right;
+}
+
+.contentsChild2 {
+    /* background-color: grey; */
+    font-size: clamp();
+    float: right;
+    width: 80%;
+    
+}
+
+.logo {
+    width: 100%;
+    /* background-color: greenyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+#contents img {
+    width: 15vw;
+    padding-right: -10%
+}
+
+.medias {
+    /* background-color: black; */
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    float: right;
+    position: absolute;
+    z-index: 5;
+    
+}
+
+#contents .medias img {
+    position: inherit;
+    width: 80px;
+    padding-right: 13%;
+    padding-bottom: 5%;
+}
+
+
+
