@@ -4,6 +4,36 @@ body {
     overflow: hidden;
 }
 
+
+#accounts {
+    background-color: burlywood;
+    z-index: 6;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+    top: 10px;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 15px;
+    transition: all 150ms ease-in-out;
+}
+
+#accounts:hover {
+    transform: scale(1.05);
+    background-color: #d8b07d;
+}
+
+#accounts p {
+    font-size: 1.5vw;
+}
+
+.fa {
+    color: black;
+}
+
+
 #menu {
     height: 100vh;
     display: flex;
@@ -107,7 +137,7 @@ body {
 }
 
 #contents:hover + #contents {
-    background-color: rgb(216, 176, 125);
+    background-color: #d8b07d;
     margin-left: clamp(2rem, 10vw, 6vw);
     transform: rotateZ(-28deg);
 }
@@ -177,7 +207,11 @@ body {
     width: 80px;
     padding-right: 13%;
     padding-bottom: 5%;
+    transition: transform 150ms ease-in-out;
 }
 
+#contents .medias img:hover {
+    transform: scale(1.07);
+}
 
 
