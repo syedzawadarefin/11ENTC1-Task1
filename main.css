@@ -4,7 +4,7 @@ body {
     overflow: hidden;
 }
 
-.stuff {
+.accountsitems {
     display: flex;
     align-items: center;
     justify-content: space-around;
