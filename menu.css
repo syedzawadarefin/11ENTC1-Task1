@@ -5,7 +5,9 @@ body {
     height: 100%;
 }
 
-
+.links .active {
+    font-weight: bold;
+}
 
 .navwrapper {
     height: 5%;
