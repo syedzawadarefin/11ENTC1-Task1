@@ -4,19 +4,36 @@ body {
     overflow: hidden;
 }
 
+.stuff {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.iconwrapper {
+    /* background-color: white; */
+    width: 50%;
+    margin-left: 15px;
+    text-align: center;
+}
 
 #accounts {
     background-color: burlywood;
     z-index: 6;
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     left: 10px;
     top: 10px;
-    height: 5vw;
-    width: 5vw;
-    border-radius: 15px;
+    height: 4vw;
+    width: 10vw;
+    border-radius: 500px;
+    border-style: solid;
+    border-color: rgb(213, 155, 80);
+    border-width: 3.5px;
     transition: all 150ms ease-in-out;
 }
 
@@ -26,7 +43,28 @@ body {
 }
 
 #accounts p {
-    font-size: 1.5vw;
+    font-size: 1vw;
+    font-family: "Oswald";
+}
+
+#accountstext {
+    display: inline;
+    text-align: center;
+}
+
+#accountstext p {
+    font-size: 2vw;
+    text-decoration: none;
+    color: black;
+}
+
+#accountstext p:active {
+    color: black
+}
+
+.accountstextwrapper {
+    /* background-color: blue; */
+    width: 100%;
 }
 
 .fa {
@@ -47,7 +85,7 @@ body {
     background-image: url(assets/homepagebackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(1vh);
+    filter: blur(1vh) contrast(90%) saturate(150%);
     opacity: 0.8;
 
     position: absolute;
@@ -64,19 +102,20 @@ body {
 .menu-item {
     color: black;
     font-size: clamp(3rem, 5vw, 8rem);
-    font-family: "Briem Hand", serif;
+    /* font-family: "Briem Hand", serif; */
+    font-family: "Oswalrd", serif;
     font-weight: bold;
 
     display: block;
     text-decoration: none;
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     transition: opacity 400ms ease, transform 150ms ease-in-out;
-    opacity: 0.3;
+    opacity: 0.35;
     
 }
 
 #menu-items {
-    margin-left: clamp(4rem, 10vw, 48rem);
+    margin-left: clamp(4rem, 9vw, 48rem);
     z-index: 2;
 }
 
