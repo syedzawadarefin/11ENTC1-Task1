@@ -28,8 +28,8 @@ body {
     align-items: center;
     left: 10px;
     top: 10px;
-    height: 4vw;
-    width: 10vw;
+    height: 3vw;
+    width: 3vw;
     border-radius: 500px;
     border-style: solid;
     border-color: rgb(213, 155, 80);
@@ -40,10 +40,16 @@ body {
 #accounts:hover {
     transform: scale(1.05);
     background-color: #d8b07d;
+    width: 7vw;
 }
 
+#accounts:hover #accountstext p {
+    visibility: visible;
+}
+
+
 #accounts p {
-    font-size: 1vw;
+    font-size: 0.8vw;
     font-family: "Oswald";
 }
 
@@ -53,9 +59,10 @@ body {
 }
 
 #accountstext p {
-    font-size: 2vw;
+    font-size: 1.6vw;
     text-decoration: none;
     color: black;
+    visibility: hidden;
 }
 
 #accountstext p:active {
