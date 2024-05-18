@@ -201,11 +201,13 @@ body {
 
 #contents p {
     font-family: "Montserrat";
+    font-size: 1.5em;
     margin-right: 6%;
 }
 
 #contents h1 {
     font-family: "Briem Hand";
+    font-size: 3em-;
     margin-right: 6%
 }
 
