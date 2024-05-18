@@ -82,3 +82,37 @@ body {
 .buttons i {
     margin-right: 15px;
 }
+
+.skews {
+    max-height: 50vh;
+    display: flex;
+}
+
+
+
+.top {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    height: 25vh;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+.skewleft {
+    height: 50vh;
+    width: 200%;
+    background-color: black;
+    transform: skew(20deg);
+    border-radius: 50px;
+}
+
+.skewright {
+    height: 50vh;
+    width: 120%;
+    background-color: black;
+    transform: skew(-20deg);
+    border-radius: 50px;
+
+}
