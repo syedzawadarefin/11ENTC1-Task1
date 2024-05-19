@@ -94,14 +94,18 @@ body {
     transform: scale(1.05);
 }
 
+.buttons {
+    display: inline;
+}
 
 .buttons p {
     color: black;
     font-size: 1.3em;
     padding-right: 15px;
+
 }
 .buttons i {
-    margin-right: 15px;
+    margin-right: 0;
 }
 
 
