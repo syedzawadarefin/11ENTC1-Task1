@@ -3,6 +3,8 @@ body {
     background-color: rgb(255, 227, 192);
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 
@@ -12,6 +14,7 @@ body {
 
 .navwrapper {
     height: 5%;
+    z-index: 3;
 }
 
 .navwrapper nav {
@@ -23,6 +26,25 @@ body {
     justify-content: space-between;
     /* background-color: red; */
 }
+
+
+.navwrapper {
+    animation: translatenav ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes translatenav {
+    0% {
+        transform: translate(0, -500px);
+    }
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+
 
 
 
@@ -86,6 +108,8 @@ body {
 .skews {
     max-height: 50vh;
     display: flex;
+    /* background-color: burlywood; */
+    z-index: 1;
 }
 
 
@@ -96,23 +120,86 @@ body {
     right: 0;
     height: 25vh;
     width: 100%;
-    background-color: black;
-    z-index: 1;
+    background-color: #cfa165;
+    z-index: 2;
 }
 
 .skewleft {
-    height: 50vh;
+    height: 60vh;
     width: 200%;
-    background-color: black;
+    background-color: #cfa165;
     transform: skew(20deg);
     border-radius: 50px;
+    z-index: 1;
 }
 
 .skewright {
-    height: 50vh;
+    height: 60vh;
     width: 120%;
-    background-color: black;
+    background-color: #cfa165;
     transform: skew(-20deg);
     border-radius: 50px;
+    z-index: 1;
+}
 
+.navimap {
+    margin: 0;
+    padding: 0;
+    top: 18%;
+    left: 6vw;
+    position: absolute;
+    height: 25vh;
+    width: 1000px;
+    z-index: 2;
+    text-align: center;
+}
+
+.venueimage {
+    position: absolute;
+    right: 10%;
+    margin: 0;
+    padding: 0;
+    top: 27%;
+    z-index: 3;
+    width: 30vw;
+}
+
+.venueimage {
+    animation: venueimage 1s ease 2s;
+}
+
+@keyframes venueimage {
+    0% {
+        transform: translate(0, -2000px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+.navimap {
+    animation: transformnavi 1s ease 2s
+}
+
+@keyframes transformnavi {
+    0% {
+        transform: translate(0, -2000px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+.skews {
+    animation: transformskews 1s ease 2s;
+}
+
+@keyframes transformskews {
+    0% {
+        transform: translate(0, -2000px);
+    }
+    100%    {
+        transform: translate(0,0);
+    }
 }
