@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Noodle Paradise | Reservations</title>
 </head>
 <body>
@@ -22,7 +25,6 @@
                 <a class="a1" href="menu.html">Menu</a>
                 <a class="a2" href="venues.html">Venues</a>
                 <a class="a3 active" href="reservations.html">Reservations</a>
-                <a class="a4" href="">Hours</a>
             </div>
             <div class="buttons">
                 <a href="">
@@ -30,8 +32,75 @@
                         <i class="fa fa-user fa-4x"></i>
                     </p>
                 </a>
-            </di>
+            </div>
+            
+            
         </nav>
+    </div>
+
+    <div class="container">
+        <div class="contents">
+            <h1>
+                Booking
+            </h1>
+            <div class="inputboxes">
+                <div class="label">
+                    <label class="custom-field">
+                        <input type="text" id="fname" name="fname" required>
+                        <span class="placeholder">First Name</span>
+                    </label>
+                    <label class="custom-field">
+                        <input type="text" id="lname" name="lname" required>
+                        <span class="placeholder">Last Name</span>
+                    </label>
+                    <label class="custom-field">
+                        <input type="text" id="lname" name="lname" required>
+                        <span class="placeholder">Phone Number</span>
+                    </label>
+                    <label class="custom-field">
+                        <input type="text" id="lname" name="lname" required>
+                        <span class="placeholder">Email</span>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="label">
+                    <label for="venuename">Select Venue:</label>
+                    <!-- <input type="text" id="venuename" name="venuename" placeholder="">  -->
+                    <select name="venuename" id="venuename" required="true">
+                        <option value="campbelltown">Campbelltown</option>
+                        <option value="cranebrook">Cranebrook</option>
+                        <option value="ingleburn">Ingleburn</option>
+                        <option value="penrith">South Penrith</option>
+                        <option value="glenmore">Glenmore Park</option>
+                    </select>
+                </div>
+                <div class="label">
+                    <label for="time">Select a time: </label> 
+                    <select name="venuename" id="venuename" required="true">
+                        <option value="campbelltown">Campbelltown</option>
+                        <option value="cranebrook">Cranebrook</option>
+                        <option value="ingleburn">Ingleburn</option>
+                        <option value="penrith">South Penrith</option>
+                        <option value="glenmore">Glenmore Park</option>
+                    </select>
+                </div>
+                <div class="label">
+                    <label for="people">How many people? </label>
+                    <select name="venuename" id="venuename" required="true">
+                        <option value="campbelltown">Campbelltown</option>
+                        <option value="cranebrook">Cranebrook</option>
+                        <option value="ingleburn">Ingleburn</option>
+                        <option value="penrith">South Penrith</option>
+                        <option value="glenmore">Glenmore Park</option>
+                    </select>
+                </div>
+            </div>
+            <a href="">
+                <div id="submit">
+                    Book
+                </div>
+            </a>
+        </div>
     </div>
     
 </body>
