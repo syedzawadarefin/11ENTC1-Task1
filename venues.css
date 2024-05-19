@@ -166,7 +166,7 @@ body {
 .navimap {
     margin: 0;
     padding: 0;
-    top: 13%;
+    top: 16%;
     left: 6vw;
     position: absolute;
     height: 25vh;
@@ -193,7 +193,7 @@ body {
     right: 10%;
     margin: 0;
     padding: 0;
-    top: 20%;
+    top: 23.5%;
     z-index: 3;
     width: 30vw;
 }
@@ -221,6 +221,7 @@ body {
     width: 80%;
     border-radius: 50px;
     z-index: -1;
+    box-shadow: 10px 10px 20px gray;
 }
 
 .container {
@@ -255,10 +256,12 @@ body {
     margin-bottom: 50px;
     background-color: #aa7d007e;
     border-radius: 20px;
+    transition: all 150ms ease;
 }
 
 .venue:hover {
     background-color: #946d007e;
+    transform: scale(1.02);
 }
 
 .venue-heading {
