@@ -5,12 +5,14 @@ body {
     height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
+    text-decoration: none;
 }
 
 
 .links .active {
     font-weight: bold;
 }
+
 
 .navwrapper {
     height: 5%;
@@ -95,6 +97,11 @@ body {
     text-decoration: none;
     padding: 0% 3%;
     color: black;
+    transition: all 100ms ease
+}
+
+.links a:hover {
+    transform: scale(1.05);
 }
 
 .buttons p {
@@ -186,7 +193,7 @@ body {
     right: 10%;
     margin: 0;
     padding: 0;
-    top: 22%;
+    top: 20%;
     z-index: 3;
     width: 30vw;
 }
@@ -206,10 +213,10 @@ body {
 
 .container {
     background-color: burlywood;
-    margin: 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
+    margin-bottom: 50px;
     height: auto;
     width: 80%;
     border-radius: 50px;
@@ -217,7 +224,7 @@ body {
 }
 
 .container {
-    animation: container 1.2s ease ;
+    animation: container 1.2s ease;
 }
 
 @keyframes container {
@@ -234,18 +241,65 @@ body {
 .venues {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3em;
-    margin-top: 25px;
-    margin-left: 100px;
+    column-gap: 2em;
+    width: 80%;
+    margin-left: 8.5vw;
     text-align: center;
     font-family: "Briem Hand";
-    background-color: rgba(208, 210, 93, 0.582);
+}
+
+.venues a {
+    text-decoration: none;
+}
+
+.venue {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #aa7d007e;
+    border-radius: 20px;
+}
+
+.venue:hover {
+    background-color: #946d007e;
+}
+
+.venue-heading {
+    color: gold;
 }
 
 .venue-info {
     text-align: center;
-    font-family: "Poetsen One"
+    font-family: "Poetsen One";
+    font-weight: normal;
+    color: black;
+    font-size: 1.2em;
+    
 }
+
+.venue-info span {
+    font-size: 1.3em;
+}
+
+.pre {
+    margin: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.img {
+    margin-top: 25px;
+    padding-bottom: 25px;
+    height: auto;
+}
+
+.img img {
+    object-fit: cover;
+    border-radius: 20px;
+    width: 300px;
+    height: 230px;
+}
+
+
 
 
 
