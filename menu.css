@@ -86,7 +86,14 @@ body {
     text-decoration: none;
     padding: 0% 3%;
     color: black;
+
+    transition: all 100ms ease
 }
+
+.links a:hover {
+    transform: scale(1.05);
+}
+
 
 .buttons p {
     color: black;
