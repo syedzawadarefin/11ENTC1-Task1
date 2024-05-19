@@ -95,7 +95,8 @@ body {
 }
 
 .buttons {
-    display: inline;
+    display: flex;
+    gap: 15px;
 }
 
 .buttons p {
