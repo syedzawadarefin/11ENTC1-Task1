@@ -18,7 +18,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color:rgb(255, 220, 175);
+    background-color:#ffd093;
     justify-content: space-between;
     /* background-color: red; */
 }
@@ -166,16 +166,17 @@ h1 {
 
 .searchcontainer:hover {
     width: 250px;
-    background-color: #d1d1d1;
+    background-color: #c4a63a;
 }
 
 .searchcontainer:hover > #query {
     visibility: visible;
+    transition-delay: 250ms;
 }
 
 #query {
     visibility: hidden;
-    background-color: #d1d1d1;
+    background-color: #c4a63a;
     margin-right: 10px;
     height: 40px;
     border: none;
@@ -183,6 +184,7 @@ h1 {
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-progress-appearance: none;
+    outline: none;
 }
 
 .menu-items {
@@ -210,10 +212,15 @@ h1 {
 }
 
 .menu-item {
-    background-color: rgb(211, 148, 65);
+    background-color: #c4a63a;
     border-radius: 20px;
     text-align: center;
     width: 90%;
+    transition: transform 200ms ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.02)
 }
 
 
@@ -232,9 +239,21 @@ h1 {
     position: relative;
     font-size: 1em;
     margin: 10px auto;
-    background-color: white;
-    width: 250px;
+    background-color: rgba(187, 146, 33, 0.983);
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    transition: all 250ms ease;
+}
+
+.cart-button:hover {
+    background-color: rgba(160, 128, 40, 0.931);
+}
 
 
+.cart-button-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
