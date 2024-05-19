@@ -206,8 +206,8 @@ body {
 }
 
 #contents h1 {
-    font-family: "Briem Hand";
-    font-size: 3em-;
+    font-family: "Oswald";
+    font-size: 3em;
     margin-right: 6%
 }
 
@@ -236,7 +236,7 @@ body {
 
 #contents img {
     width: 15vw;
-    padding-right: -10%
+    padding-right: -10%;
 }
 
 .medias {

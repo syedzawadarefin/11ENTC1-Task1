@@ -110,7 +110,7 @@ body {
     max-width: 80%;
     margin: 25px auto;
     padding: 1.5em;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgb(228, 203, 95);
     /* transform: translate(0, 2000px); */
 }
@@ -195,7 +195,7 @@ h1 {
     font-size: 1.2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3em;
+    gap: 2em;
     margin-top: 25px;
     margin-left: 100px;
     /* background-color: black; */
@@ -206,13 +206,14 @@ h1 {
     height: 400px;
     flex-shrink: 0;
     object-fit: cover;
+    border-radius: 40px;
 }
 
 .menu-item {
     background-color: rgb(211, 148, 65);
     border-radius: 20px;
     text-align: center;
-    width: 80%;
+    width: 90%;
 }
 
 
