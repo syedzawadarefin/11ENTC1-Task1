@@ -122,7 +122,7 @@ body {
 
 
 .skews {
-    animation: transformskews 1s ease;
+    animation: transformskews 0.5s ease;
 }
 
 @keyframes transformskews {
@@ -176,7 +176,7 @@ body {
 }
 
 .navimap {
-    animation: transformnavi 1s ease
+    animation: transformnavi 0.5s ease
 }
 
 @keyframes transformnavi {
@@ -199,7 +199,7 @@ body {
 }
 
 .venueimage {
-    animation: venueimage 1s ease ;
+    animation: venueimage 0.5s ease
 }
 
 @keyframes venueimage {
@@ -224,16 +224,14 @@ body {
 }
 
 .container {
-    animation: container 1.2s ease;
+    animation: container 0.6s ease;
 }
 
 @keyframes container {
     0% {
-        visibility: hidden;
         transform: translate(0, 2000px);
     }    
     100% {
-        visibility: visible;
         transform: translate(0,0);
     }
 }
