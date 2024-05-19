@@ -121,7 +121,7 @@ body {
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    height: 75vhg;
+    height: calc((fit-content) + 50px);
     border-radius: 15px;
     box-shadow: 10px 10px 20px gray;
 
@@ -169,7 +169,8 @@ select {
 }
 
 .inputs {
-    font-size: 1.5em;
+    margin-right: 150px;
+    font-size: 1em;
     /* background-color: white; */
     text-align: right;
     font-family: "Montserrat";
@@ -186,7 +187,7 @@ select {
 .custom-field .placeholder {
     position: absolute;
     left: 12px;
-    top: (50%);
+    top: 20px;
     /* transform: translateY(-50%); */
     color: gray;
     transition: all 0.3s ease;
@@ -222,24 +223,30 @@ select {
 
 }
 
-#submit {
-    width: 150px;
-    height: 100x;
-    background-color: rgb(227, 161, 75);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    left: auto;
-    border-radius: 20px;
-    border: 2px solid rgb(237, 138, 10);
+
+
+.submit-button {
+    display: flex;
+
+    font-size: 1em;
+    margin: 4% auto;
+    margin-bottom: 50px;
+    background-color: rgba(187, 146, 33, 0.983);
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    transition: all 250ms ease;
 }
 
-#submit p {
-    text-align: center;
+.submit-button:hover {
+    background-color: rgba(160, 128, 40, 0.931);
 }
 
-.contents a {
-    text-decoration: none;
-    color: black;
+
+.submit-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
