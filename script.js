@@ -13,3 +13,12 @@ function cartsuccess() {
 function accountsuccess() {
     alert("Successfully logged in!")
 }
+
+function hamburger() {
+    var x = document.getElementById("links");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav"
+    }
+}
