@@ -263,3 +263,53 @@ a {
     margin-top: 26px;
     font-size: 1.5em;
 }
+
+
+@media only screen and (min-width: 431px) {
+    .icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .grid-wrap {
+        width: 90%;
+    }
+ 
+    .logolabel p {
+        display: none;
+    }
+
+    nav .links {
+        display: none;
+    }
+
+    .buttons p {
+        font-size: 0.8em;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .leftcontainer {
+        width: 99%;
+        font-size: 0.8em;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    
+    .rightcontainer {
+        width: 90%;
+
+    }
+
+
+    .price {
+        display: none;
+    }
+}
