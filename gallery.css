@@ -31,7 +31,7 @@ body {
 
 @keyframes translatenav {
     0% {
-        transform: translate(0, -500px);
+        transform: translate(0, -4000px);
     }
     100% {
         transform: translate(0, 0)

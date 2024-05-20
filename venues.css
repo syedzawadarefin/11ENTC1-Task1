@@ -31,7 +31,7 @@ body {
 
 
 .navwrapper {
-    animation: translatenav 0.8s ease;
+    animation: translatenav 0.5s ease;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -39,7 +39,7 @@ body {
 
 @keyframes translatenav {
     0% {
-        transform: translate(0, -500px);
+        transform: translate(0, -4000px);
     }
     100% {
         transform: translate(0, 0)
@@ -133,7 +133,7 @@ body {
 
 @keyframes transformskews {
     0% {
-        transform: translate(0, 2000px);
+        transform: translate(0, -4000px);
     }
     100%    {
         transform: translate(0,0);
@@ -187,7 +187,7 @@ body {
 
 @keyframes transformnavi {
     0% {
-        transform: translate(0, 2000px);
+        transform: translate(0, -4000px);
     }
     100% {
         transform: translate(0, 0);
@@ -210,7 +210,7 @@ body {
 
 @keyframes venueimage {
     0% {
-        transform: translate(0, 2000px);
+        transform: translate(0, -4000px);
     }
     100% {
         transform: translate(0,0);
@@ -231,12 +231,12 @@ body {
 }
 
 .container {
-    animation: container 0.6s ease;
+    animation: container 0.5s ease;
 }
 
 @keyframes container {
     0% {
-        transform: translate(0, 2000px);
+        transform: translate(0, 5000px);
     }    
     100% {
         transform: translate(0,0);
