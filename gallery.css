@@ -137,6 +137,11 @@ button {
     margin-top: 50px;
     border: black;
     border-width: 50px;
+    transition: all 0.4s ease;
+}
+
+.gallery:hover {
+    transform: scale(1.02);
 }
 
 .full-screen { 
