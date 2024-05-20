@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(255, 227, 192);
+    background-color: #ffe3c0;
     width: 100%;
     height: 100%;
 }
@@ -118,7 +118,10 @@ body {
     margin-left: 10px
 }
 
-b
+button {
+    background-color: #ffe3c0;
+}
+
 .gallery img {
     padding: 50px;
     width: 800px;
@@ -126,7 +129,8 @@ b
     object-fit: cover;
     border: black;
     border-width: 20px;
-    border-radius: 50px;
+    border-radius: 30px;
+    padding: 0;
 }
 
 .gallery {
@@ -145,9 +149,13 @@ b
     color: white;
 }
 
-.flex-container-centre {
+.flex-container-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
+.hidden {
+    display: none;
+}

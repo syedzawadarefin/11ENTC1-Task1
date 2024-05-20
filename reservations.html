@@ -46,33 +46,32 @@
     </div>
 
     <div class="container">
-        <form action="" class="contents">
+        <form action="" id="formcontents">
             <h1>
                 Booking
             </h1>
             <div class="inputboxes">
                 <div class="label">
                     <label class="custom-field">
-                        <input type="text" id="fname" name="fname" required>
+                        <input type="text" id="formtext" name="fname" required>
                         <span class="placeholder">First Name</span>
                     </label>
                     <label class="custom-field">
-                        <input type="text" id="lname" name="lname" required>
+                        <input type="text" id="formtext" name="lname" required>
                         <span class="placeholder">Last Name</span>
                     </label>
                     <label class="custom-field">
-                        <input type="tel" id="num" name="num" required>
+                        <input type="tel" id="formtext" name="num" required>
                         <span class="placeholder">Phone Number</span>
                     </label>
                     <label class="custom-field">
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="formtext" name="email" required>
                         <span class="placeholder">Email</span>
                 </div>
             </div>
             <div class="inputs">
                 <div class="label">
                     <label for="venuename">Select Venue:</label>
-                    <!-- <input type="text" id="venuename" name="venuename" placeholder="">  -->
                     <select name="venuename" id="venuename" required="true">
                         <option value="campbelltown">Campbelltown</option>
                         <option value="cranebrook">Cranebrook</option>
@@ -116,11 +115,10 @@
                     </select>
                 </div>
             </div>
-            <button type="submit" class="submit-button" onclick="success()">
+            <button type="submit" class="submit-button" onclick="reservesuccess()">
                 <div class="submit-text">
                     <p>Submit</p>
                 </div>
-                alert
             </button> <br> 
         </form>
     </div>

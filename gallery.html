@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="gallery.css">
-    <script src="script.js"></script>
     <title>Noodle Paradise | Gallery</title>
 </head>
 <body>
@@ -43,29 +42,48 @@
             </div>
         </nav>
 
+        <!-- haha this is amazing -->
         <div id="container">
-            <button class="gallery">
+            <button onclick="togglePopup1()" class="gallery">
                 <img src="assets/gallery/00e07557-e678-4e74-8f2d-3a6d7b69e82a-retina-large-jpeg.avif" alt="">
             </button>
-            <button class="gallery">
+            <button onclick="togglePopup2()" class="gallery">
                 <img src="assets/gallery/Asian7.jpg" alt="">
             </button>
-            <button class="gallery">
+            <button onclick="togglePopup3()" class="gallery">
                 <img src="assets/gallery/combination-noodles-3.jpg" alt="">
             </button>
-            <button class="gallery">
+            <button onclick="togglePopup4()" class="gallery">
                 <img src="assets/gallery/images.jpeg" alt="">
             </button>
-            <button class="gallery">
+            <button onclick="togglePopup5()" class="gallery">
                 <img src="assets/gallery/Noodle-Paradise.jpg" alt="">
             </button>
 
-            <div class="full-screen flex-container-centre">
-                <button>Close Popup</button>
+            <div class="full-screen one hidden flex-container-center">
+                <button onclick="togglePopup1()">Close</button>
+                <img src="assets/gallery/00e07557-e678-4e74-8f2d-3a6d7b69e82a-retina-large-jpeg.avif" alt="">
+            </div>
+            <div class="full-screen two hidden flex-container-center">
+                <button onclick="togglePopup2()">Close</button>
+                <img src="assets/gallery/Asian7.jpg" alt="">
+            </div>
+            <div class="full-screen three hidden flex-container-center">
+                <button onclick="togglePopup3()">Close</button>
+                <img src="assets/gallery/combination-noodles-3.jpg" alt="">
+            </div>
+            <div class="full-screen four hidden flex-container-center">
+                <button onclick="togglePopup4()">Close</button>
+                <img src="assets/gallery/images.jpeg" alt="">
+            </div>
+            <div class="full-screen five hidden flex-container-center">
+                <button onclick="togglePopup5()">Close</button>
+                <img src="assets/gallery/Noodle-Paradise.jpg" alt="">
             </div>
         </div>
 
 
+        <script src="gallery.js"></script>
 
 </body>
 </html>
