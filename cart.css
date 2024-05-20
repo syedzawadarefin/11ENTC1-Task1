@@ -189,7 +189,7 @@ hr {
 
 .total-final {
     font-size: 1.5em;
-    
+
 }
 
 
@@ -198,4 +198,28 @@ hr {
     padding-right: 5px;
 }
 
+.checkout-container {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(119, 88, 48);
+    border-radius: 20px;
+}
 
+.checkout {
+    height: fit-content;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
