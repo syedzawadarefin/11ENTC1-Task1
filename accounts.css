@@ -228,7 +228,7 @@ button {
         color: black;
         background-color: inherit;
         font-family: inherit;
-        margin: 15px;
+        margin-right: 15px;
 
     }
 
@@ -259,7 +259,6 @@ button {
     .dropdown-content a:hover {
         background-color: #ffbd67;
     }
-    
 
     .grid-wrap {
         width: 90%;
