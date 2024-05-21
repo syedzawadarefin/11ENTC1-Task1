@@ -14,3 +14,10 @@ function accountsuccess() {
     alert("Successfully logged in!")
 }
 
+function mobilenav() {
+    if (document.getElementById("mobilenav").className == "mobilenavshow") {
+        document.getElementById("mobilenav").className = "mobilenavhide"
+    } else {
+        document.getElementById("mobilenav").className = "mobilenavshow"
+    }
+}
