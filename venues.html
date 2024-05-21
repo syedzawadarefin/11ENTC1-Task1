@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Noodle Paradise | Venues</title>
-    <script src="venues.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="venues.css">
 </head>
 <body>
@@ -37,16 +37,23 @@
                     <p>
                         <i class="fa fa-user fa-4x"></i>
                     </p>
-                    <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                        <p>
-                            <i class="fa fa-bars fa-4x"></i>
-                        </p>
-                    </a>
                 </a>
+                    <button onclick="mobilenav()" class="dropbtn">
+                        <i class="fa fa-bars fa-4x"></i>
+                    </button>
+
             </di>
         </nav>
     </div>
-
+    <div id="mobilenav" class="mobilenavhide">
+        <div class="dropdown-content">
+            <a href="menu.html">Menu</a>
+            <a href="venues.html">Venues</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </div>
+    
     <div class="skews">
         <div class="top"></div>
         <div class="skewleft"></div>

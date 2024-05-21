@@ -28,3 +28,12 @@ const popup5 = document.querySelector('.five')
 function togglePopup5() {
     popup5.classList.toggle('hidden')
 }
+
+
+function mobilenav() {
+    if (document.getElementById("mobilenav").className == "mobilenavshow") {
+        document.getElementById("mobilenav").className = "mobilenavhide"
+    } else {
+        document.getElementById("mobilenav").className = "mobilenavshow"
+    }
+}

@@ -11,6 +11,7 @@ body {
 
 .navwrapper {
     height: 5%;
+    
 }
 
 .navwrapper nav {
@@ -332,6 +333,10 @@ h1 {
     .mobilenav {
         display: none;
     }
+
+    .dropdown-content a {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 430px) {
@@ -339,6 +344,15 @@ h1 {
         overflow-x: hidden;
     }
 
+    .dropbtn {
+        border: none;
+        outline: none;
+        color: black;
+        background-color: inherit;
+        font-family: inherit;
+        margin-right: 15px
+
+    }
 
     #mobilenav {
         background-color: #ffd093;
