@@ -229,6 +229,9 @@ button {
         overflow-x: hidden;
     }
 
+    .close button {
+        width: 100px;
+    }
 
     .dropbtn {
         border: none;
